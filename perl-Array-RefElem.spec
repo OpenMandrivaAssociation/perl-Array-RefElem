@@ -1,7 +1,7 @@
 %define	module	Array-RefElem
 %define	name	perl-%{module}
 %define	version	1.00
-%define	release	%mkrel 4
+%define	release	%mkrel 5
 
 Summary: 	Direct access to the internal perl routines for arrays & hashes
 Name: 		%{name}
