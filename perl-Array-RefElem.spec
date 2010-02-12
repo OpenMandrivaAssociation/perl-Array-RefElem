@@ -1,26 +1,26 @@
-%define	module	Array-RefElem
-%define	name	perl-%{module}
-%define	version	1.00
-%define	release	%mkrel 8
+%define	upstream_name	 Array-RefElem
+%define	upstream_version 1.00
+
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 9
 
 Summary: 	Direct access to the internal perl routines for arrays & hashes
-Name: 		%{name}
-Version: 	%{version}
-Release: 	%{release}
 License: 	GPL
 Group: 		Development/Perl
-Source0:	http://www.cpan.org/authors/id/GAAS/%{module}-%{version}.tar.bz2
-Url:		http://search.cpan.org/dist/%{module}/
+Url:		http://search.cpan.org/dist/%{upstream_name}/
+Source0:	http://www.cpan.org/authors/id/GAAS/%{upstream_name}-%{upstream_version}.tar.bz2
+
 BuildRequires:	perl-devel
-BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-Requires: 	perl
+
+BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 This module gives direct access to the internal perl routines that let
 you store reference to things in arrays and hashes.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -42,5 +42,3 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/*/*
 %{perl_vendorarch}/Array
 %{perl_vendorarch}/auto/Array
-
-
