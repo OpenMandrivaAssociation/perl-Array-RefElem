@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 11
+Release:    %mkrel 12
 
 Summary: 	Direct access to the internal perl routines for arrays & hashes
 License: 	GPL
