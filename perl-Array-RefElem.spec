@@ -4,7 +4,7 @@
 Summary:	Direct access to the internal perl routines for arrays & hashes
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	21
+Release:	22
 License:	GPLv2
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}/
