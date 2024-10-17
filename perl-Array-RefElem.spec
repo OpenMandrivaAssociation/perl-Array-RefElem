@@ -7,7 +7,7 @@ Version:	%perl_convert_version %{upstream_version}
 Release:	27
 License:	GPLv2
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}/
+Url:		https://search.cpan.org/dist/%{upstream_name}/
 Source0:	http://www.cpan.org/authors/id/GAAS/%{upstream_name}-%{upstream_version}.tar.bz2
 BuildRequires:	perl-devel
 
