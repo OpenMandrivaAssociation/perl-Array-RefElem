@@ -9,6 +9,7 @@ License:	GPLv2
 Group:		Development/Perl
 Url:		https://search.cpan.org/dist/%{upstream_name}/
 Source0:	http://www.cpan.org/authors/id/GAAS/%{upstream_name}-%{upstream_version}.tar.bz2
+BuildRequires:	make
 BuildRequires:	perl-devel
 
 %description
